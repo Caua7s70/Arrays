@@ -2,7 +2,7 @@
 
 #include <string>?
 
-void main()?
+void main()
 { 
 	int r;
 	std::string carros[3] = { "BMW", "Audi", "Mercedes" };
@@ -24,5 +24,6 @@ void main()?
 
 
 	
+
 
 
