@@ -21,30 +21,30 @@ int main()
 	{
 		if (userGuess < randomNumber)
 		{
-			cout << "O numero é maior! Tente novamente: ";
+			cout << "O numero Ã© maior! Tente novamente: ";
 			cin >> userGuess;
 			attempts++;
 		}
 		else if (userGuess > randomNumber)
 			
 		{
-			cout << "O numero é menor! Tente novamente: ";
+			cout << "O numero Ã© menor! Tente novamente: ";
 			cin >> userGuess;
 			attempts++;
 		}
 	}
-	if (attempts <= 5)
+	if (attempts < 6)
 	{
 		cout << "Voce acertou em " << attempts << " tentativas!" << endl;
 		cout << "Parabens, voce eh um genio! Voce adivinhou o numero " << randomNumber << "!" << endl;
 	}
-	else if (attempts <= 10)
+	else if (attempts < 11)
 	{
 		cout << "Voce acertou em " << attempts << " tentativas!" << endl;
 		cout << "Bom trabalho! Voce adivinhou o numero " << randomNumber << "!" << endl;
 	}
 	
-	 if (attempts >= 11)
+	 else
 	{
 		cout << "Voce acertou em " << attempts << " tentativas!" << endl;
 		cout << "Voce finalmente conseguiu! Apesar de ser um completo idiota, acertou o numero " << randomNumber << "!" << endl;
